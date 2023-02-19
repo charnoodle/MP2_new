@@ -116,7 +116,7 @@ body {
 
     
     .modal-content {
-      background-image: url('pink background.jpg');
+      background-image: url('pink\ background.JPG');
       background-repeat: no-repeat;
       background-size: cover;
       color: white;
