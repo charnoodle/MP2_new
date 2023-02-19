@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="checkout.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>    
+    <script src="./checkout.js"></script>
+    <script src="./qrcode.js"></script>
+    <link href="./Clogo3 with white circle.png" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto);
+
+        .modal-content {
+          background-image: url('pink background.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          color: white;
+        }
+
+        .button {
+        line-height: 55px;
+        padding: 0 30px;
+        background: #a53e76;
+        color: #fff;
+        display: inline-block;
+        font-family: roboto;
+        text-decoration: none;
+        font-size: 18px;
+        }
+
+        .button:hover,
+        .button:visited {
+            cursor: pointer;
+        background: #a53e76;
+        color: #fff;
+        }
+
+
+
+    </style>
+   
+   
+
+   <title>Checkout Page</title>
+</head>
+<body>
+
+    <div class="title">
+        <h2>Checkout Form</h2>
+    </div>
+
+    <div class="container">
+ 
+        <div class="d-flex">
+          <form id="ticket-order">
+              <div class="form-group">
+                <label for="productSelect">Tickets: </label>
+                <select name="ticket" class="form-control" id="productSelect">
+                  <option selected disabled value="">Select one</option>
+                  <option value="rideAllYouCan">Ride all you can!</option>
+                  <option value="xpressPass"><strong>Xpress Pass</strong></option>
+                  <option value="regular">Regular</option>
+                  <option value="basic">Basic</option>
+                  <option value="groupPackage">Group Package (10 pax)</option>
+                  <option value="couplePackage">Couple Package (2 pax)</option>
+                </select>
+                <label>Amount: </label>
+                <input
+                  type="number"
+                  class="form-control mb-2"
+                  id="quantityInput"
+                  min="1"
+                  max="99"
+                  value="1"
+                />
+                <button id="addButton">Add to cart</button>
+              </div>
+              <img src="img/packages.png" style="max-width: 600px; margin-top: 50px; align-items: center;" />
+            </form>
+      
+            
+            
+            
+          <div class="col-lg-12 Yorder">
+              <h3>Your Cart</h3>
+            <table id="productTable" class="table">
+              <!-- <thead> -->
+                <tr>
+                  <th colspan="3">Product</th>
+                  <th colspan="3">Quantity</th>
+                  <th colspan="3">Action</th>
+                </tr>
+            <!-- </thead>
+            <tbody>
+              
+            </tbody> -->
+              <!-- <tr>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Subtotal</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Shipping</td>
+                <td>Free shipping</td>
+              </tr> -->
+            </table><br>
+            <div id="total">Total: ₱0</div>
+            <br>
+            <div>
+              <label>
+                <input type="radio" name="show-hide-input" id="show-input-radio" value="show">
+                Electronic Fund Transfer
+              </label>
+              <div id="input-container" style="display:none">
+                <input type="text" id="input-text" placeholder="Enter your O.R. Number">
+              </div>
+              <script>
+                const showInputRadio = document.getElementById("show-input-radio");
+                const inputContainer = document.getElementById("input-container");
+            
+                showInputRadio.addEventListener("change", () => {
+                  if (showInputRadio.checked) {
+                    inputContainer.style.display = "block";
+                  }
+                });
+              </script>
+            </div>
+            <p>
+                Make your payment directly into our bank account. Please use your Order ID as the payment reference. 
+            </p>
+            
+            <div>
+              <label>
+                <input type="radio" name="show-hide-input" id="show-input-radio2" value="show">
+                Gcash/Maya
+              </label>
+              <div id="input-container2" style="display:none">
+                <input type="text" id="input-text" value="Phone number">
+              </div>
+              <script>
+                const showInputRadio2 = document.getElementById("show-input-radio2");
+                const inputContainer2 = document.getElementById("input-container2");
+            
+                showInputRadio2.addEventListener("change", () => {
+                  if (showInputRadio2.checked) {
+                    inputContainer2.style.display = "block";
+                  }
+                });
+              </script>
+              
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="show-hide-input" id="show-input-radio3" value="show">
+                Debit/Credit Card
+                  <img src="https://www.logolynx.com/images/logolynx/c3/c36093ca9fb6c250f74d319550acac4d.jpeg" alt="ccimages" width="50">
+                
+              </label>
+              <div id="input-container3" style="display:none">
+                <input type="text" id="input-text" placeholder="Enter card number">
+              </div>
+              <script>
+                const showInputRadio3 = document.getElementById("show-input-radio3");
+                const inputContainer3 = document.getElementById("input-container3");
+            
+                showInputRadio3.addEventListener("change", () => {
+                  if (showInputRadio3.checked) {
+                    inputContainer3.style.display = "block";
+                  }
+                });
+              </script>
+            </div>
+
+
+                <button 
+                  type="button" 
+                  id="placeOrderBtn"  
+                  onclick="generateQr()" 
+                 
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  >Place Order</button>
+      
+      
+      
+                    
+                  <button onclick="goToHomePage()">Go to Home Page</button>
+            </div><!-- Yorder -->
+          </div>
+        </div> 
+
+   
+   
+
+
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <a class="navbar-brand"href="#" alt="logo" style="width: auto;"><img src="logo 1line.png"
+                style="height: 60px" /></a>
+          
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+          ></button>
+        </div>
+        <div class="modal-body">
+            <h1 class="modal-title" id="exampleModalLabel" style="text-align: center;">Tickets booked!</h1>
+            
+                <form id="login_form">
+                    <div class="mb-3">
+                      <!-- <label for="username" class="form-label"><strong>Username</strong></label>
+                      <input type="text" class="form-control" id="username" name="user" placeholder="Enter your username">
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="form-label"><strong>Password</strong></label>
+                      <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="remember_me">
+                      <label class="form-check-label" for="remember_me">Remember Me</label>
+                    </div> -->
+                    <div class="mb-3">
+                        <div class="box" style="text-align: center;">
+                          <h3>QR Code</h3>
+                          <h5>Kindly save and present upon arrival.</h5>
+                          <hr />
+                          <div class="sqrcode" style="text-align: center;"></div>
+                          <div class="qrcode" style="text-align: center;"></div>
+                          <!-- <input
+                            type="text"
+                            placeholder="Paste an URL or enter text, then press enter"
+                            onchange="generateQr()"
+                          /> -->
+                        </div>
+                    </div>
+                    <script src="./qrcode.js"></script>
+                <div class="mb-3">
+                  
+                </div>
+            </form>
+
+        </div>
+        <div class="modal-footer">
+          <button onclick="goToHomePage()">Go to Home Page</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+
+  </body>
+</html>

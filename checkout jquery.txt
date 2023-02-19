@@ -1,0 +1,22 @@
+$(document).ready(function () {
+  $(".form-group").submit(function (x) {
+
+    let item = $("#ticket-select").val();
+    let quantity = $("#pax").val();
+    let itemCost = 100;
+    let price = quantity * cost.get(item)
+    });
+     
+    
+
+    $(".productTable").html(
+      $(".table").html() +
+        "<td>" +
+        item + "</td>" + 
+        "<td>" +
+        "₱" +
+        price +
+        "</td>"
+    );
+    x.preventDefault();
+  });

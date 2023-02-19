@@ -1,0 +1,572 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+.big-container {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+background: -webkit-linear-gradient(to right, #c00d6f, #5e133c);
+background: linear-gradient(to right, #c00d6f, #5e133c);
+    min-height: 50vh;
+    background-size: contain;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;   
+}
+
+
+.nav-item:hover {
+  background-color: #a53e76;
+}
+.navbar{
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background: #a53e76 ;
+  background: -webkit-linear-gradient(to right, #c00d6f, #5e133c);
+  background: linear-gradient(to right, #c00d6f, #5e133c); 
+}
+
+
+#demo {
+  background-color: black;
+  z-index: 2;
+  position: relative;
+
+}
+
+.carousel-item img {
+    max-height: 600px;
+}
+
+
+.crsl-text{
+    background-color: rgb(165, 62, 118, 0.9);
+    border-radius: 10px;
+    margin-top: 75px;
+    margin-left: 25px;
+    width: 90%;
+    max-height: 100vh;
+}
+
+
+.crsl-text h1{
+    padding-top: 25px;
+}
+.crsl-text p{
+    font-size: 15px;
+    color: white;
+    padding: 45px;
+}
+
+.abtImg {
+    padding-left: 20px;
+    padding-top: 55px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+.gallery {
+border: 1px solid #cccccc;
+border-radius: 50%;
+background-color: rgb(165, 62, 118);
+padding: 5px;
+margin-right: 15px;
+}
+
+.gallery img {
+  border-radius: 55%;
+}
+
+
+
+.gallery:hover, .img {
+border: 1px solid #ffffff;
+background: transparent;
+opacity: 0.9;
+border-radius: 50%;
+}
+
+div.desc {
+padding: 15px;
+text-align: center;
+}
+
+
+
+.responsive {
+float: left;
+width: 300px;
+margin: 6px;
+}
+
+
+@media only screen and (max-width: 700px) {
+.responsive {
+width: 100%;
+margin: 6px 0;
+}
+}
+
+@media only screen and (max-width: 500px) {
+.responsive {
+width: 100%
+}
+}
+
+ 
+  .counter-up{
+    background: url(Assets/b2.jfif);
+    background-size: contain;
+    background-attachment: fixed;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    position: relative;
+}
+
+.counter-up::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0, 0.8);
+}
+
+.counter-up .content {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.content .box{
+    width: calc(25% - 30px);
+    border: 1px dashed white;
+    background-color: rgb(165, 62, 118, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    flex-direction: column;
+
+}
+
+.content .box .icon {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.content .box .counter {
+    font-size: 40px;
+    color: rgb(255, 237, 237);
+}
+
+.content .box .text {
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(255, 248, 248);
+}
+
+@media (max-width: 1036px){
+    .counter-up{
+        padding: 50px 50px 0 50px;
+    }
+    .content .box {
+        width: calc(50% - 30px);
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 500px){
+    .content .box {
+        width: 100%;
+
+    }
+}
+
+.Reviews {
+    background: url(Assets/b2.jfif);
+    background-size: contain;
+    background-attachment: fixed;
+    min-height: 40vh;
+    position: relative;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.Reviews::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.8);
+  }
+
+.Reviews h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 30px;
+    padding-top: 30px;
+    font-size: 60px;
+    z-index: 2;
+    position: relative;
+}
+.Reviews h2 {
+    color: black;
+    font-size: 20px;
+}
+.Reviews .container-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    z-index: 2;
+    position: relative;
+    padding: 20px;
+}
+
+
+.Reviews .container-box .box1{
+    border: 1px solid black;
+    flex: 1 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    background:  #a53e76e6;
+    text-align: center;
+    max-height: 650px;
+}
+.Reviews .container-box .box1 img {
+    height: 200px;
+    width: 100%;
+    object-fit: fill;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.Reviews .container-box .box1 h2 {
+    margin: 10px 0;
+}
+.Reviews .container-box .box1 p {
+    color: white;
+    text-align: center;
+    font-size: small;
+    padding: 40px;
+
+}
+.Reviews .container-box .box1 .star {
+    vertical-align: text-top;
+}
+
+.founder-text h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 60px;
+}
+.founder-text p {
+    text-align: center;
+    color: #ccc;
+    margin-left: 10%;
+    margin-right: 10%;
+    word-wrap: break-word;
+}
+#f1 {
+  max-height: 250px;
+}
+
+div.gallery3 {
+  border: 1px solid #ccc;
+  background:  #a53e76e6;
+  margin: 10%;
+  border-radius: 10px;
+}
+
+div.gallery3:hover {
+  border: 1px solid #777;
+}
+
+div.gallery3 img {
+  width: 100%;
+  max-height: 250px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.desc {
+  color: white;
+  vertical-align: text-top;
+}
+
+
+.responsive2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive2 {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive2 {
+    width: 100%;
+  }
+}
+
+div.gallery2 {
+    border: 1px solid #ccc;
+    background:  #a53e76e6;
+    margin: 10%;
+    border-radius: 10px;
+  }
+  
+  div.gallery2:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery2 img {
+    width: 100%;
+    max-height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .desc {
+    color: white;
+    vertical-align: text-top;
+  }
+  
+  
+  .responsive1 {
+    display: inline-block;
+    width: 24.99999%;
+  }
+  .gal2 {
+    margin-left: 15%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive1 {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive1 {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .contactus {
+    background: url(Assets/b2.jfif);
+    background-size: contain;
+    background-attachment: fixed;
+    min-height: 50vh;
+
+  }
+  .contactus::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.8);
+  }
+
+  .contactus h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    z-index: 2;
+    position: relative;
+  }
+.contactInfo {
+      z-index: 2;
+      position: relative;
+      margin: 5px;
+      padding-top: 20px;
+      padding-left: 10px;
+      width: 100%;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(165, 62, 118, 0.9);
+      border-radius: 20px;
+    }
+    .googlemap {
+      width: 100%;
+      padding-right: 20px;
+      padding-bottom: 10px;
+      border-radius: 10px;
+    }
+  
+   .contactInfo .box {
+      position: relative;
+      display: flex;
+    }
+   .contactInfo .box .icon {
+      padding: 10px;
+      min-width: 40px;
+      height: 40px;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      font-size: 22px;
+    }
+    
+   .contactInfo .box .text {
+      font-size: small;
+      color: white;
+      font-weight: 300;
+    }
+    
+  .contactInfo .box .text  h3 {
+      font-weight: 400;
+      color: rgb(0, 0, 0);
+      padding-left: 5px;
+    }
+  
+    #mssge {
+      padding: 15%;
+    }
+  
+    
+  @media (max-width: 991px)
+  {
+    .contact
+    {
+      padding: 30px;
+    }
+     .contactInfo
+    {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+  
+  
+  .contactform {
+      z-index: 2;
+      position: relative;
+      margin: 5px;
+      width: 100%;
+      padding: 30px;
+      background: rgb(165, 62, 118, 0.9);
+      border-radius: 20px;
+      max-height: 90vh;
+    }
+    .contactform h2 {
+      font-size: 30px;
+      color: rgb(15, 20, 20);
+      font-weight: 500px;
+    }
+    .contactform .inputBox {
+      position: relative;
+      width: 100%;
+      margin-top: 10px;
+    }
+    .contactform .inputBox input,
+    .contactform .inputBox textarea {
+      width: 100%;
+      padding: 5px 0;
+      font-size: 16px;
+      margin:  10px 0;
+      border: none;
+      border: 1px solid #464040;
+      outline: none;
+      resize: none;
+      border-radius: 5px;
+    }
+    .contactform .inputBox span {
+      position: absolute;
+      left: 0;
+      padding: 5px 0;
+      font-size: 16px;
+      margin:  10px 0;
+      pointer-events: none;
+      transition: 0.5;
+      color: #666;
+    }
+    
+    .button1 {
+      background-color: transparent; 
+      color: black; 
+      border: 2px solid #000000;
+      padding: 8px;
+      border-radius: 20px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    
+    .button1:hover {
+      background:  rgba(133, 7, 122, 0.9);
+      color: rgb(255, 255, 255);
+    }
+  
+
+    footer{
+      background: -webkit-linear-gradient(to right, #c00d6f, #5e133c);
+      background: linear-gradient(to right, #c00d6f, #5e133c);
+    }
+
+    .container2  {
+      text-align: center;
+      background: #a53e76 ;
+      background: -webkit-linear-gradient(to right, #d4599d, #a53e76);  
+      background: linear-gradient(to right, #d4599d, #a53e76); 
+    }
+    links img{
+      height: 3%;
+      width: 3%;
+      }
+
+  #revName {
+    color: white;
+    padding-top: 25px;
+  }
+
+  .box1 {
+    padding-top: 25px;
+  }
+
+  .founder-text {
+     color: white;
+  }
+
+  #headerColor {
+    color: white;
+ }
+
+ #socmedIcons {
+  width: 50px;
+  text-align: center;
+  display: inline-block;
+ }

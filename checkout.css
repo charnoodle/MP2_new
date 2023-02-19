@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
+
+body{
+  background: url('img/checkout.jpg');
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #262626;
+  margin: 5% 0;
+}
+.container{
+  width: 100%;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 2000px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 1200px)
+{
+  .container{
+    max-width: 1140px;
+  }
+}
+.d-flex{
+  display: flex;
+  flex-direction: row;
+  background: #f6f6f6;
+  border-radius: 0 0 5px 5px;
+  padding: 25px;
+}
+form{
+  flex: 4;
+  display: block;
+  position: relative;
+}
+.Yorder{
+  flex: 2;
+}
+.title{
+  /* background: -webkit-gradient(linear, left top, right bottom, color-stop(0, # #a53e76), color-stop(100, #eec4dc)); */
+  background: -moz-linear-gradient(top left,  #a53e76 0%, #eec4dc 100%);
+  background: -ms-linear-gradient(top left,  #a53e76 0%, #eec4dc 100%);
+  background: -o-linear-gradient(top left,  #a53e76 0%, #eec4dc 100%);
+  background: linear-gradient(to bottom right,  #a53e76 0%, #eec4dc 100%);
+  border-radius:5px 5px 0 0 ;
+  padding: 20px;
+  color: #f6f6f6;
+}
+h2{
+  margin: 0;
+  padding-left: 15px; 
+  width: 100%;
+}
+
+.title h2 {
+  width: 100%;
+  box-sizing: border-box !important;
+}
+
+
+.required{
+  color: red;
+}
+label, table{
+  display: block;
+  margin: 15px;
+}
+label>span{
+  float: left;
+  width: 25%;
+  margin-top: 12px;
+  padding-right: 10px;
+}
+input[type="text"], input[type="number"], input[type="email"], select
+{
+  width: 70%;
+  height: 30px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #dadada;
+  color: #888;
+}
+select{
+  width: 75%;
+  height: 45px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+.Yorder{
+  margin-top: 15px;
+  height: auto;
+  padding: 20px;
+  border: 1px solid #dadada;
+}
+table{
+  margin: 0;
+  padding: 0;
+  border-collapse:collapse;
+  width: 100%;
+}
+
+.table-container {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+th{
+  border-bottom: 1px solid #dadada;
+  padding: 10px 0;
+  text-align: left;
+}
+tr>td:nth-child(1){
+  text-align: left;
+  color: #2d2d2a;
+}
+tr>td:nth-child(2){
+  text-align: right;
+  color:  #a53e76;
+}
+td{
+  border-bottom: 1px solid #dadada;
+  padding: 25px 25px 25px 0;
+  vertical-align: top;
+  text-align: left
+}
+
+th:empty,
+td:empty {
+  text-align: center;
+}
+
+
+p{
+  display: block;
+  color: #888;
+  margin: 0;
+  padding-left: 25px;
+}
+.Yorder>div{
+  padding: 15px 0; 
+}
+
+button{
+  width: 76%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  background:  #a53e76;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+button:hover{
+  cursor: pointer;
+  background:  #a53e76;
+}
+
+.header {
+  display: block;
+  position: absolute;
+  top: 33%;
+}
+
+#login-button:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #a53e76;
+}
+
+#login-button {
+  border: white;
+}
+
+
+/* Modal code */
+.modal-content {
+  background-image: url('pink background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.button {
+line-height: 55px;
+padding: 0 30px;
+background: #a53e76;
+color: #fff;
+display: inline-block;
+font-family: roboto;
+text-decoration: none;
+font-size: 18px;
+}
+
+.button:hover,
+.button:visited {
+cursor: pointer;
+background: #a53e76;
+color: #fff;
+}
+
+
+#productSelect, #quantityInput {
+  width: 80%;
+}
+
+#addButton {
+  width: 50%;
+}
+

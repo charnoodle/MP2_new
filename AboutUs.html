@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./AboutUs.css">
+    <script>
+      $(document). ready(function(){
+          $(".counter").counterUp({
+              delay: 10,
+              time: 1200
+          })
+      });
+
+      $(".box1").hover(function(){
+      $(this).css("background-color", "transparent");
+      }, function(){
+      $(this).css("background-color", "#a53e76e6");
+      });
+  </script>
+    <title>About Us</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <!-- lagay ko muna tong logo na ferris wheel ne, palitan nalang -->
+      <a class="navbar-brand"href="#"><img src="img/logo.gif"
+            style="width: 60px" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-light active" aria-current="page" href="./index.html" target="#">Home</a>
+          </li>
+          <li class="nav-item"> 
+            <!-- link to cha2 -->
+            <a class="nav-link text-light active" href=".html" target="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <!-- link to kuya ramilo -->
+            <a class="nav-link text-light active" href=".html" target="#">Ticket</a>
+          </li>
+          <li class="nav-item">
+            <!-- link to cha1 -->
+            <a class="nav-link text-light active" href=".html" target="#">Booking</a>
+          </li>
+          <li class="nav-item">
+            <!-- link to ramilo -->
+            <a class="nav-link text-light active" href="./attractions.html" target="#">Attractions</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/carousel.png" alt="Los Angeles" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="img/carousel2.png" alt="Chicago" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="img/b2.jfif" alt="New York" class="d-block" style="width:100%">
+      </div>
+    </div>
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+
+    <div class="big-container">
+            <div class="container-fluid text-center">
+                <div class="row">
+                  <div class="col-lg-1"></div>
+                  <div class="col-lg-3 abtImg">
+                    <div class="responsive">
+                        <div class="gallery" data-aos="fade-right">
+                          <a target="_blank" href="img/gal1.jfif">
+                            <img src="img/329742500_3425790727739683_393861653295555491_n.jpg" alt="Cinque Terre" class="img-fluid" >
+                          </a>
+                        </div>
+                    </div>
+                                           
+                      <div class="responsive">
+                        <div class="gallery" data-aos="fade-left">
+                          <a target="_blank" href="img/gal2.jfif" >
+                            <img src="img/gal2.jfif" alt="Forest" class="img-fluid" >
+                          </a>
+                        </div>
+                      </div>
+                      
+                      <div class="responsive" >
+                        <div class="gallery" id="lgal2" data-aos="fade-right">
+                          <a target="_blank" href="img/gal3.jfif">
+                            <img src="img/gal3.jfif" alt="Northern Lights" class="img-fluid" id="lgal2">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class= "crsl-text" data-aos="fade-right">
+                            <h1 style="color:white"><b>About us</b></h1>
+                            <p>"Welcome to CharJeRam Wonderland! We are a family-friendly destination that offers a unique blend of excitement, adventure and fun. Our park features over 40 attractions, including heart-pounding roller coasters, interactive shows and games, and delicious dining options. We believe that everyone deserves to make memories that last a lifetime, and it is our mission to provide our guests with an unforgettable experience every time they visit. From the moment you step through our gates, you'll feel like a kid again and immerse yourself in a world of excitement. Come join us and see why CharJeRam family fun!"</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 abtImg">  
+                          <div class="responsive" id="lgal">
+                            <div class="gallery " data-aos="fade-left">
+                              <a target="_blank" href="img/gal4.jfif">
+                                <img src="img/gal5.jfif" alt="Mountains" class="img-fluid">
+                              </a>
+                            </div>
+                          </div>
+                          
+                          <div class="responsive" id="lgal">
+                            <div class="gallery " data-aos="fade-right">
+                              <a target="_blank" href="img/gal4.jfif">
+                                <img src="img/gal4.jpg" alt="Mountains" class="img-fluid">
+                              </a>
+                            </div>
+                          </div>
+
+                          <div class="responsive" id="lgal">
+                            <div class="gallery " data-aos="fade-left">
+                              <a target="_blank" href="img/gal4.jfif">
+                                <img src="img/gal7.jpg" alt="Mountains" class="img-fluid">
+                              </a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-1"></div>
+                </div>
+            </div>
+
+            <div class="Reviews mt-5">
+              <h1>
+                  Reviews
+              </h1>
+              <div class="container container-box">
+                  <div class="box1" data-aos="fade-up">
+                      <img src="img/rev1.jpg" alt="">
+                      <h2 id="revName">Ms. Queza Fabela.</h2>
+                      <div class="star">⭐⭐⭐⭐⭐</div>
+                      <p>Charjeram  is the perfect destination for anyone looking for an exciting and fun-filled day out. The park's rides and attractions are top-notch, the staff are friendly and helpful. I highly recommend this park to anyone looking for a great time!</p>
+                  </div>
+                  <div class="box1" data-aos="fade-up">
+                      <img src="img/rev2.png" alt="">
+                      <h2 id="revName">Mr. Daiben Angelo Sanchez.</h2>
+                      <div class="star">⭐⭐⭐⭐⭐</div>
+                      <p>I visited Charjeram Wonderpark with my friends and had a blast! The park is clean and well-maintained, and the rides are thrilling and exciting. We especially enjoyed the water rides and roller coasters.</p>
+                  </div>
+                  <div class="box1" data-aos="fade-up">
+                      <img src="img/rev3.jpg" alt="">
+                      <h2 id="revName">Mr. Cholo Da Mamangan.</h2>
+                      <div class="star">⭐⭐⭐⭐⭐</div>
+                      <p>Charjeram Wonderpark is a must-visit destination for families. The park has something for everyone, from gentle rides for young children to thrilling roller coasters for adults. The staff are friendly and helpful.</p>
+                  </div>
+                  <div class="box1" data-aos="fade-up">
+                      <img src="img/rev4.jpg" alt="">
+                      <h2 id="revName">Mr. Nhel Tara Shot.</h2>
+                      <div class="star">⭐⭐⭐⭐⭐</div>
+                      <p>If you're looking for a fun and memorable day out, look no further than Charjeram Wonderpark. The park's rides and attractions are top-notch, and the atmosphere is lively and exciting. I highly recommend this park to anyone looking for a good time!</p>
+                  </div>
+              </div>
+            </div>
+            
+            <div class="counter-up">
+              <div class="content" data-aos="fade-up">
+                  <div class="box">
+                      <div class="icon"><i class="fa fa-ticket fa-1x" aria-hidden="true"></i></div>
+                      <div class="counter">3050</div>
+                      <div class="text">Tickets Sold</div>
+                  </div>
+                  <div class="box">
+                      <div class="icon"><i class="fa fa-smile-o" aria-hidden="true"></i></div>
+                      <div class="counter">3025</div>
+                      <div class="text">Happy Customers</div>
+                  </div>
+                  <div class="box">
+                      <div class="icon"><i class="fa fa-trophy fa-1x" aria-hidden="true"></i>
+                      </div>
+                      <div class="counter">724</div>
+                      <div class="text">Awards Received</div>
+                  </div>
+              </div>
+            </div>
+
+              <div class="founder-text">
+                <h1 style="color: white"> The Founders</h1>
+                <p>Charjeram Wonderland theme park was founded by four brilliant minds who shared a passion for creating an immersive and unforgettable experience for visitors. The team of founders consists of a renowned architect, a  amusement park engineer, a talented designer, and a visionary entrepreneur. Their combined expertise and dedication have resulted in a park that is a marvel of design and innovation, offering visitors an unparalleled experience of fun and adventure. The architect's eye for detail is evident in the stunning and intricate design of the park's buildings and rides, while the operator's experience ensures that every aspect of the park runs smoothly and safely. The designer's creativity is showcased in the park's whimsical and magical theme, while the entrepreneur's vision has brought the park to life and made it a destination for families and thrill-seekers alike. Together, these four founders have created a world-class theme park that is sure to leave visitors with memories to last a lifetime.</p>
+              </div>
+
+              <div class="conrtainer">
+                <div class="responsive2">
+                  <div class="gallery3" data-aos="slide-right">
+                    <a target="_blank" href="img/f1.png">
+                      <img src="img/f1.png" alt="Cinque Terre" width="600" height="400" id="f1">
+                    </a>
+                    <div class="desc">
+                      <b>Ms. Charmaine David</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="container-fluid text-center">
+              <div class="responsive1">
+                <div class="gallery2" data-aos="slide-up">
+                  <a target="_blank" href="img/f2.jpg">
+                    <img src="img/f2.jpg" alt="Forest" width="600" height="400">
+                  </a>
+                  <div class="desc"><b>Ms. Charmayn Arellano</b></div>
+                </div>
+              </div>
+              
+              <div class="responsive1">
+                <div class="gallery2" data-aos="slide-up">
+                  <a target="_blank" href="img/f4.jpg">
+                    <img src="img/f4.jpg" alt="Northern Lights" width="600" height="400">
+                  </a>
+                  <div class="desc"><b>Mr. Ramilo Duran</b></div>
+                </div>
+              </div>
+              
+              <div class="responsive1" data-aos="slide-up">
+                <div class="gallery2">
+                  <a target="_blank" href="img/f6.jpg">
+                    <img src="img/f6.jpg" alt="Mountains" width="600" height="400">
+                  </a>
+                  <div class="desc"><b>Mr. Jeremy Pullido</b></div>
+                </div>
+              </div>
+            </div>
+              
+            <div class="clearfix"></div>
+    </div>
+
+    <div class="container-fluid contactus">
+      <h1>We love to hear from you!</h1>
+    <div class="row pb-5">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-4 mt-3">
+          <div class="contactInfo"  data-aos="fade-right">
+            <div class="box">
+              <div class="icon">
+                <i class="material-icons" style="font-size:36px">map</i>
+              </div>
+              <div class="text ms-3">
+                <h3 id="headerColor">Address</h3>
+                <p>Universal 111, Manila City Philippines</p>
+              </div>
+            </div>
+            <div class="ps-3" >
+              <iframe class="googlemap" width="300" height="200" frameborder="0" src="https://www.bing.com/maps/embed?h=300&w=600&cp=14.55492385360563~120.98299026486472&lvl=13&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+              </iframe>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="material-icons" style="font-size:36px">local_phone</i>
+            </i></div>
+            <div class="text ms-3">
+              <h3 id="headerColor">Phone</h3>
+              <p>+ 639 456 454 68</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="material-icons" style="font-size:36px">local_post_office</i>
+            </div>
+            <div class="text ms-3">
+              <h3 id="headerColor">Email</h3>
+              <p>Charjeram.WonderLand@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 form1 mt-3"  data-aos="fade-left">
+        <div class="contactform">
+          <h2 id="headerColor">Send Message</h2>
+          <div class="inputBox">
+            <input type="text" name="" required="required" placeholder="Full Name">
+          </div>
+          <div class="inputBox">
+            <input type="text" name="" required="required" placeholder="Email">
+          </div>
+          <div class="inputBox">
+            <input type="text" name="" required="required" placeholder="Type your message..." id="mssge">
+          </div>
+          <div class="inputBox">
+            <button class="button button1" id="headerColor">Submit</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2"></div>
+    </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1500,
+    });
+  </script>
+
+<footer>
+<div class="shadow-sm p-3 mb-5 rounded">
+  <div class="container2 my-5">
+    <section class="d-flex justify-content-between p-4 text-white">
+    <div class="me-5">
+    <div id="socmedIcons">
+      <i class="bi bi-facebook"></i>
+      <a href="#" class="links me-4"><img src="img/facebook.jpg" id="socmedIcons"></a>
+      <i class="bi bi-twitter"></i>
+      <a href="#" class="links me-4"><img src="img/twitt.png" id="socmedIcons"></a>
+      <i class="bi bi-instagram"></i>
+      <a href="#" class="links me-4"><img src="img/instagram.png" id="socmedIcons"></a>    
+      <i class="bi bi-linkedin"></i>
+      <a href="#" class="links me-4"><img src="img/linkin.png" id="socmedIcons"></a>
+      <i class="bi bi-google"></i>
+      <a href="#" class="links me-4"><img src="img/git.png"id="socmedIcons"></a>  
+    </div>
+    </div>
+  </section>
+  <section class="container3">
+    <div class="container text-center text-md-start mt-5 text-light">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          
+          <h6 class="text-uppercase fw-bold">Charjeram</h6>
+          <hr
+              class="mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px; background-color: #a53e76; height: 2px"
+              />
+          <p>
+            You can explore the amazing features of Charjeram Wonderland has to offer and why it is one of the best amusement parks around. 
+          </p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-light">
+          <h6 class="text-uppercase fw-bold">Rides</h6>
+          <hr
+              class="mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px; background-color: #a53e76; height: 2px"
+              />
+          <p>
+            <a href="#!" class="text-light">Anchors Away</a>
+          </p>
+          <p>
+            <a href="#!" class="text-light">Skill Games</a>
+          </p>
+          <p>
+            <a href="#!" class="text-light">Disk-O-Magic</a>
+          </p>
+          <p>
+            <a href="#!" class="text-light">Space Shuttle</a>
+          </p>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        
+          <h6 class="text-uppercase fw-bold text-light">Useful links</h6>
+          <hr
+              class="mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px; background-color: #a53e76; height: 2px"
+              />
+          <p>
+            <a href="#!" class="text-light">Charjeram</a>
+          </p>
+          <p>
+            <a href="#!" class="text-light">Become an Affiliate</a>
+          </p>
+          <p>
+            <a href="#!" class="text-light">Ticket Rates</a>
+          </p>
+          <p>
+            <a href="#!" class="text-light">Help</a>
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-light">
+          <h6 class="text-uppercase fw-bold">Contact</h6>
+          <hr
+              class="mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px; background-color: #a53e76; height: 2px"
+              />
+          <p><i class="fas fa-home mr-3"></i> FindMe, Universal 111, PHL</p>
+          <p><i class="fas fa-envelope mr-3"></i> Charjeram.WonderLand@gmail.com</p>
+          <p><i class="fas fa-phone mr-3"></i> + 639 456 454 68</p>
+          <p><i class="fas fa-print mr-3"></i> + 639 234 567 19</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div
+      class="text-center p-3 text-light">
+      © Charjeram.WonderLand@gmail.com:
+    <a class="text-light" href="#"
+      >Charjeram</a>
+  </div>
+  </footer>
+  </div>
+</div>
+</footer>   
+</body>
+</html>

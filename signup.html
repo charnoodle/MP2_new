@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="signup.css">
+  <link rel="stylesheet" href="sidebar.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <title>Signup Form</title>
+</head>
+<div class="primary-nav">
+  <button href="#" class="hamburger open-panel nav-toggle">
+      <span class="screen-reader-text">Menu</span>
+  </button>
+
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <!-- lagay ko muna tong logo na ferris wheel ne, palitan nalang -->
+    <a class="navbar-brand"href="#"><img src="img/logo.gif"
+          style="width: 60px" /></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link text-light active" aria-current="page" href="./index.html" target="#">Home</a>
+        </li>
+        <li class="nav-item"> 
+          <!-- link to cha2 -->
+          <a class="nav-link text-light active" href=".html" target="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <!-- link to kuya ramilo -->
+          <a class="nav-link text-light active" href=".html" target="#">Ticket</a>
+        </li>
+        <li class="nav-item">
+          <!-- link to cha1 -->
+          <a class="nav-link text-light active" href=".html" target="#">Booking</a>
+        </li>
+        <li class="nav-item">
+          <!-- link to ramilo -->
+          <a class="nav-link text-light active" href="./attractions.html" target="#">Attractions</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+
+<div class="container">
+    <div class="title">
+        <h2>Signup Form</h2>
+    </div>
+  <div class="d-flex">
+    <form action="" method="">
+      <label>
+        <span class="fname">First Name <span class="required">*</span></span>
+        <input type="text" name="fname">
+      </label>
+      <label>
+        <span class="lname">Last Name <span class="required">*</span></span>
+        <input type="text" name="lname">
+      </label>
+      <label>
+        <span>Company Name (Optional)</span>
+        <input type="text" name="cn">
+      </label>
+      
+      <label>
+        <span>Street Address <span class="required">*</span></span>
+        <input type="text" name="houseadd" placeholder="House number and street name" required>
+      </label>
+      <label>
+        <span>&nbsp;</span>
+        <input type="text" name="apartment" placeholder="Apartment, suite, unit etc. (optional)">
+      </label>
+      <label>
+        <span>Town / City <span class="required">*</span></span>
+        <input type="text" name="city"> 
+      </label>
+      <label>
+        <span>Postcode / ZIP <span class="required">*</span></span>
+        <input type="text" name="city"> 
+      </label>
+      <label>
+        <span>Phone <span class="required">*</span></span>
+        <input type="tel" name="city"> 
+      </label>
+      <label>
+        <span>Email Address <span class="required">*</span></span>
+        <input type="email" name="city" class="eMail"> 
+      </label>
+    </form>
+    
+       </div>
+       <button onClick="register" class="register">Register</button>
+       <p id="errorMessage" style="display: none; color: red;">Please fill in the text box.</p>
+</div> 
+</body>
+
+</html>
