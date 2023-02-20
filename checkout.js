@@ -38,7 +38,7 @@ $(document).ready(function () {
   
 //Js for the QR Code Generator for tickets
 var qrcode = new QRCode(document.querySelector(".qrcode"));
-// qrcode.makeCode("Why did you scan me?")
+
 function generateQr() {
   var text = "";
   $("#productTable tr").each(function() {
@@ -63,14 +63,16 @@ function updateQrCode() {
   });
   
   // Generate the QR code based on the table content
-  var qrcode = new QRCode(document.querySelector(".qrcode"));
-  qrcode.makeCode(tableContent);
+  var qrcodeNew = new QRCode(document.querySelector(".qrcode"));
+  qrcodeNew.makeCode(tableContent);
 }
+
 // Add a new item to the table and update the QR code
 function addItem() {
   // ... code to add a new row to the table ...
   updateQrCode();
 }
+
 
 
 // Get the modal
