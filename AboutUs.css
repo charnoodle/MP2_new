@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   }
 
 .big-container {
@@ -21,12 +21,9 @@ background: linear-gradient(to right, #c00d6f, #5e133c);
   background-color: #a53e76;
 }
 .navbar{
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-  background: #a53e76 ;
-  background: -webkit-linear-gradient(to right, #c00d6f, #5e133c);
-  background: linear-gradient(to right, #c00d6f, #5e133c); 
+background: #a53e76 ;
+background: -webkit-linear-gradient(to right, #c00d6f, #5e133c);
+background: linear-gradient(to right, #c00d6f, #5e133c);
 }
 
 
@@ -45,8 +42,7 @@ background: linear-gradient(to right, #c00d6f, #5e133c);
 .crsl-text{
     background-color: rgb(165, 62, 118, 0.9);
     border-radius: 10px;
-    margin-top: 75px;
-    margin-left: 25px;
+    margin-top: 17%;
     width: 90%;
     max-height: 100vh;
 }
@@ -54,18 +50,17 @@ background: linear-gradient(to right, #c00d6f, #5e133c);
 
 .crsl-text h1{
     padding-top: 25px;
+    color: white;
 }
 .crsl-text p{
-    font-size: 15px;
+    font-size: 20px;
     color: white;
     padding: 45px;
 }
 
 .abtImg {
-    padding-left: 20px;
-    padding-top: 55px;
-    padding-left: 40px;
-    padding-bottom: 20px;
+margin-top: 2%;
+margin-left: 2%;
 }
 
 .gallery {
@@ -73,7 +68,7 @@ border: 1px solid #cccccc;
 border-radius: 50%;
 background-color: rgb(165, 62, 118);
 padding: 5px;
-margin-right: 15px;
+margin: 5%;
 }
 
 .gallery img {
@@ -249,7 +244,14 @@ width: 100%
     background:  #a53e76e6;
     text-align: center;
     max-height: 650px;
+    transition: all 0.3s;
 }
+
+.Reviews .container-box .box1:hover {
+  transform: scale(1.20);
+}
+
+
 .Reviews .container-box .box1 img {
     height: 200px;
     width: 100%;
@@ -259,6 +261,8 @@ width: 100%
 }
 .Reviews .container-box .box1 h2 {
     margin: 10px 0;
+    color: black;
+    font-size: 25px;
 }
 .Reviews .container-box .box1 p {
     color: white;
@@ -272,7 +276,7 @@ width: 100%
 }
 
 .founder-text h1{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -335,8 +339,8 @@ div.gallery3 img {
 div.gallery2 {
     border: 1px solid #ccc;
     background:  #a53e76e6;
-    margin: 10%;
     border-radius: 10px;
+    margin: 8%;
   }
   
   div.gallery2:hover {
@@ -354,13 +358,9 @@ div.gallery2 {
     vertical-align: text-top;
   }
   
-  
   .responsive1 {
     display: inline-block;
     width: 24.99999%;
-  }
-  .gal2 {
-    margin-left: 15%;
   }
   
   @media only screen and (max-width: 700px) {
@@ -548,25 +548,47 @@ div.gallery2 {
       width: 3%;
       }
 
-  #revName {
-    color: white;
-    padding-top: 25px;
-  }
 
-  .box1 {
-    padding-top: 25px;
-  }
+      section {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 2;
+        position: relative;
+        padding-bottom: 10%;
+    }
 
-  .founder-text {
-     color: white;
-  }
+    .title {
+        font-size: 3rem;
+        margin: 2rem 0rem;
+        color: white;
+    }
 
-  #headerColor {
-    color: white;
- }
+    .faq .accordion-item {
+        background:  #a53e76e6;
+    }
 
- #socmedIcons {
-  width: 50px;
-  text-align: center;
-  display: inline-block;
- }
+    #revName {
+      color: white;
+      padding-top: 25px;
+    }
+  
+    .box1 {
+      padding-top: 25px;
+    }
+  
+    .founder-text {
+       color: white;
+    }
+  
+    #headerColor {
+      color: white;
+   }
+  
+   #socmedIcons {
+    width: 50px;
+    text-align: center;
+    display: inline;
+   }
