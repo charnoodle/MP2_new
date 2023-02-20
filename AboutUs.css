@@ -113,7 +113,7 @@ width: 100%
 
  
   .counter-up{
-    background: url(Assets/b2.jfif);
+    background: url(img/b2.jfif);
     background-size: contain;
     background-attachment: fixed;
     min-height: 50vh;
@@ -195,7 +195,7 @@ width: 100%
 }
 
 .Reviews {
-    background: url(Assets/b2.jfif);
+    background: url(img/b2.jfif);
     background-size: contain;
     background-attachment: fixed;
     min-height: 40vh;
@@ -383,7 +383,7 @@ div.gallery2 {
   }
 
   .contactus {
-    background: url(Assets/b2.jfif);
+    background: url(img/b2.jfif);
     background-size: contain;
     background-attachment: fixed;
     min-height: 50vh;
